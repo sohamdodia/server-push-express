@@ -12,7 +12,7 @@ node >= 8.4.0
 1. Run: ```node http1.js```
 2. Goto: ``` http://localhost:4000/home ```
 
-[HTTP1 RESPONSE] (https://github.com/sohamdodia/server-push-express/blob/master/Screenshots/http1.png)
+[HTTP1 RESPONSE](https://github.com/sohamdodia/server-push-express/blob/master/Screenshots/http1.png)
 
 ### HTTP2
 
