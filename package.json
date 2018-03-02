@@ -1,0 +1,22 @@
+{
+  "name": "server-push",
+  "version": "1.0.0",
+  "description": "Server Push Example",
+  "main": "http2.js",
+  "dependencies": {
+    "express": "^4.16.2",
+    "morgan": "^1.9.0",
+    "mz": "^2.7.0",
+    "spdy": "^3.4.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Server-Push",
+    "Http2"
+  ],
+  "author": "Soham Dodia",
+  "license": "ISC"
+}
