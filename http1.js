@@ -5,9 +5,9 @@ const server = require('http').createServer(app);
 
 app.use(express.static(__dirname + '/public'));
 
-app.get('/home', (req, res) => {
+app.get('/', (req, res) => {
 	res.render('index.html');
 });
 
 
-server.listen(4000);
+server.listen(3000);

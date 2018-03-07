@@ -16,7 +16,7 @@ app.get('/home', (req, res) => {
 
     ]).then(files => {
 		if (res.push){
-			var squareRootStream = res.push('/js/squareRoot.js', {
+			const squareRootStream = res.push('/js/squareRoot.js', {
 				req: {'accept': '**/*'},
 				res: {'content-type': 'application/javascript'}
 			});
@@ -26,7 +26,7 @@ app.get('/home', (req, res) => {
 			});
 
 			squareRootStream.end(files[1]);
-			var randomNumberStream = res.push('/js/randomNumber.js', {
+			const randomNumberStream = res.push('/js/randomNumber.js', {
 				req: {'accept': '**/*'},
 				res: {'content-type': 'application/javascript'}
 			});
@@ -37,7 +37,7 @@ app.get('/home', (req, res) => {
 
 			randomNumberStream.end(files[2]);
 
-			var firstImageStream = res.push('/image.png', {
+			const firstImageStream = res.push('/image.png', {
 				req: {'accept': '**/*'},
 				res: {'content-type': 'image/png'}
 			});
@@ -48,7 +48,7 @@ app.get('/home', (req, res) => {
 
 			firstImageStream.end(files[3]);
 
-			var secondImageStream = res.push('/image2.png', {
+			const secondImageStream = res.push('/image2.png', {
 				req: {'accept': '**/*'},
 				res: {'content-type': 'image/png'}
 			});
@@ -71,4 +71,4 @@ spdy.createServer({
         key: fs.readFileSync(__dirname + '/server.key'),
         cert: fs.readFileSync(__dirname + '/server.crt')
     }, app)
-    .listen(3000);
+    .listen(4000);
